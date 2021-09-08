@@ -1,16 +1,26 @@
+@font-face {
+    font-family: "Google Sans";
+    src: url('font/GoogleSans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     background-color: rgb(46, 57, 81);
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    font-family: Google Sans;
 }
 
 
-body {
-    display: flex; 
-    justify-content: center;
-    max-width: 100vw;
-  }
-
-
-.btn-num,.btn-sin,.btn-act{
+.btn-num,
+.btn-sin,
+.btn-act {
     position: relative;
     border: none;
     font-size: 40px;
@@ -21,37 +31,39 @@ body {
     width: 60pt;
     border-radius: 50%;
     margin: 12pt 6pt;
-  }
+}
 
-.btn-num{
+.btn-num {
     background-color: rgb(61, 87, 107);
     color: rgb(150, 168, 160);
-  }
+}
 
-.btn-sin{
+.btn-sin {
     background-color: rgb(36, 46, 68);
-    color:rgb(24, 212, 163);
-  }
+    color: rgb(24, 212, 163);
+}
 
-.btn-act{
+.btn-act {
     color: rgb(36, 46, 68);
     background-color: rgb(24, 212, 163);
-  }
+}
 
-.btn-num:hover,.btn-sin:hover{
+.btn-num:hover,
+.btn-sin:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(24, 212, 163);
     cursor: pointer;
-  }
+}
 
-.btn-act:hover{
+.btn-act:hover {
     color: rgb(46, 57, 81);
     background-color: rgb(255, 255, 255);
     cursor: pointer;
-  }
+}
 
 
-#visor, #visor::placeholder {
+#visor,
+#visor::placeholder {
     width: 280pt;
     margin: 12pt 0;
     border: none;
